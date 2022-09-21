@@ -22,7 +22,23 @@ Encryption is the process of converting plain text into cipher text, i.e. conver
 #### We need to diversify the record type, ignoring spaces, as an example, thanks to a special function - mx_strtrim.
 ![Снимок экрана от 2022-09-21 14-04-10](https://user-images.githubusercontent.com/95318722/191488369-417267f0-f6a4-4b22-aeb4-ef0e26376415.png)
 ##### We can write the values however we like without violating the framework of the input rule.
-
-
+### Consider the conclusions for both acts. According to the conditions of basic and creative.
+#### Basic output:
+![Снимок экрана от 2022-09-21 14-13-17](https://user-images.githubusercontent.com/95318722/191490231-a9bd2fbe-bd47-44e5-a195-85f3dd8e6bff.png)
+#### Creative output:
+![Снимок экрана от 2022-09-21 14-18-46](https://user-images.githubusercontent.com/95318722/191490855-e35c0632-48ea-44c4-83d9-259512e5fac4.png)
+### Consider the structure of the program in the area of conditions and output.
+![Снимок экрана от 2022-09-21 14-20-54](https://user-images.githubusercontent.com/95318722/191491880-b0ea3bc6-5687-458d-a6b6-fbefdb511794.png)
+#### 4 elements are passed to the main computational function: command line values, which in massive equivalent will mean argv[1], argv[3], argv[2], argv[4]. Where argv[2] is the operation whose value is checked in the same function.
+#### Next, we implement the mathematical functions that are provided for by the task, and their output, respectively.
+![Снимок экрана от 2022-09-21 14-21-08](https://user-images.githubusercontent.com/95318722/191492077-240a4c59-8d25-41a1-8b57-5a168297277b.png)
+![Снимок экрана от 2022-09-21 14-21-11](https://user-images.githubusercontent.com/95318722/191492147-5ea65e46-74ad-40c3-ab01-4cb09f12c9fb.png)
+![Снимок экрана от 2022-09-21 14-21-13](https://user-images.githubusercontent.com/95318722/191492268-b21f26a7-2a74-435a-a061-1626be826676.png)
+![Снимок экрана от 2022-09-21 14-21-17](https://user-images.githubusercontent.com/95318722/191492131-dc12eee0-77b9-4dde-a408-df29d41a5547.png)
+##### The algorithm for deriving these values was made in a way that I did not really like, because I think that it could still be made shorter.
+![Снимок экрана от 2022-09-21 14-21-35](https://user-images.githubusercontent.com/95318722/191492494-a5926efd-9aff-4a34-a3a6-3f9a2d404f13.png)
+#### Comparing boundaries and calculating the maximum and minimum values is an important step for the implementation of mathematical functions.
+![Снимок экрана от 2022-09-21 14-22-15](https://user-images.githubusercontent.com/95318722/191492643-2b1facc4-1816-4432-8cb8-2abb12731d19.png)
+### As a result: the program was brought to the level of its full performance. The team understood the basic principle of data decryption using this example. No memory leaks have been reported.
 
 
