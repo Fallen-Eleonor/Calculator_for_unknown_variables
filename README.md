@@ -7,13 +7,22 @@ Encryption is the process of converting plain text into cipher text, i.e. conver
 
 <img src="https://www.venafi.com/sites/default/files/2020-12/Encrypt_Decrypt_Diff_1.png" alt="decryption" align = left> 
 
-#### Cubes and a pyramid - we all love these interesting geometric shapes, let's look at their representation in the console, with a conditional 3D understanding.
-### This is a cube whose size is 4 n.
-![c1](https://user-images.githubusercontent.com/95318722/189953229-bef63ed8-5d95-4bf0-8867-716555c3702f.jpg)
-### This is a cube whose size is 32 n.
-![c2](https://user-images.githubusercontent.com/95318722/189953394-1b79ed9a-c991-4bf1-82d9-b51a5bf69ae2.jpg)
-### This is a pyramid whose size is 6 n.
-![p1](https://user-images.githubusercontent.com/95318722/189953402-7dd85a5a-9653-4ad5-86a0-6fdab4788e95.jpg)
-### This is a pyramid whose size is 32 n.
-![p2](https://user-images.githubusercontent.com/95318722/189953407-da25ece2-cc3e-46a2-a88a-3bbce5dea288.jpg)
-#### Such a pseudo-representation of the world in three dimensions is a formality for us, because it becomes such only during rotation, therefore now we see only a 2D plane, of course, everything will change if it is not a console, but some kind of environment for displaying 3D graphics.
+### The implementation of the decryption algorithm is not an easy task, as it seemed to us at first, but if you delve into the very essence, then everything becomes clear.
+#### First, we have an inference rule, which we will write as a simple spelling of a write error.
+![Снимок экрана от 2022-09-21 13-50-45](https://user-images.githubusercontent.com/95318722/191485903-2a7d7d29-520e-466e-b80f-207b05b87e6f.png)
+#### Let's display its output in the terminal:
+.![Снимок экрана от 2022-09-21 13-45-17](https://user-images.githubusercontent.com/95318722/191485602-af5e266e-0dcc-4fe6-81dc-20cd968be48c.png)
+#### We need the program to output an error of the value (operand, operation, result) that we pass. The program accepts the specific character "?".
+![Снимок экрана от 2022-09-21 13-55-42](https://user-images.githubusercontent.com/95318722/191486798-0bff3e6d-ccd6-4193-b4ac-65fb7520fc0a.png)
+##### The current values of the command line go through a cycle during which the type of error is determined and, in fact, the presence of a non-contradiction of logic - the length of the string should not be less than 0.
+![Снимок экрана от 2022-09-21 13-58-52](https://user-images.githubusercontent.com/95318722/191487386-75379207-9499-469b-9919-2bfbcab26af2.png)
+##### The macros display further output of the cause of the error.
+#### Let's display its output in the terminal:
+![Снимок экрана от 2022-09-21 13-54-52](https://user-images.githubusercontent.com/95318722/191486669-0737f98d-187f-40fc-a1e6-76033e5e84e6.png)
+#### We need to diversify the record type, ignoring spaces, as an example, thanks to a special function - mx_strtrim.
+![Снимок экрана от 2022-09-21 14-04-10](https://user-images.githubusercontent.com/95318722/191488369-417267f0-f6a4-4b22-aeb4-ef0e26376415.png)
+##### We can write the values however we like without violating the framework of the input rule.
+
+
+
+
